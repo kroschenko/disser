@@ -1,0 +1,107 @@
+%\usepackage[cp1251]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+%\usepackage{pscyr}
+%\renewcommand{\rmdefault}{ftm}
+
+%для борьбы с переполнениями за счет разреженных слов в абзаце
+\emergencystretch=25pt
+%math
+\usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+
+\usepackage{afterpage}
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage{enumitem}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{longtable,array}
+\usepackage{graphicx,epsfig}
+\usepackage[unicode,colorlinks=false,pagebackref=false]{hyperref}
+%\usepackage{refcheck}% checks lost and useless labels, shows `keys' of \label in the margins
+%фиксить картинки
+%\usepackage{float}
+
+\usepackage{textcomp}% For Celsium sign only
+
+% Листинги с исходным кодом программ
+\usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage{totcount}
+%\usepackage{totpages}
+
+% Плавающие окружения. во многом лучше пакета float
+\usepackage{floatrow}
+
+\usepackage{tikz}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+%for lists
+\usepackage[ampersand]{easylist}
+\ListProperties(Hide=100, Hang=false, Margin=0mm, Indent1=10.5mm, Indent2=15mm, Style*=-- ,
+Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )
+
+\usepackage[ruled, vlined]{algorithm2e}
+\makeatletter
+\newenvironment{algo}[1][]
+  {\renewcommand{\algorithmcfname}{Алгоритм}%
+   \begin{algorithm}[#1]
+   \long\def\@caption##1[##2]##3{%
+     \par
+     \begingroup\@parboxrestore
+     \if@minipage\@setminipage\fi
+     \normalsize \@makecaption{\AlCapSty{\AlCapFnt\algorithmcfname}}{\ignorespaces ##3}%
+     \par\endgroup
+   }}
+  {\end{algorithm}}
+\makeatother
+
+% \SetKwData{KwDat}{Данные}
+\SetKwInput{KwIn}{Исходные данные}
+\SetKwInput{KwRes}{Результат}%
+% \SetKwIF{Si}{SinonSi}{Sinon}{si}{alors}{sinon si}{sinon}{fin si}%
+% \SetKwFor{Tq}{tant que}{faire}{fin tq}%
+
+\newenvironment{easylistNum}{\begin{easylist}
+\ListProperties(Hide1=0, Hang=false, Margin=0mm, Indent1=10.5mm, Indent2=15mm, Start1=1, Style*=, FinalMark={)})}{\ListProperties(Hide=100, Hang=false, Margin=0mm, Indent1=10.5mm, Indent2=15mm, Style*=-- ,
+Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )\end{easylist}}
+
+\renewcommand\labelitemi{\textbf{--}}
+\floatsetup[table]{capposition=top}
+
+    % \lstset{
+    %     language=Python,
+    %     basicstyle=\ttfamily,
+    %     keywordstyle=\bfseries,
+    %     showspaces=false,
+    %     showstringspaces=false,
+    %     mathescape=true,
+    %     aboveskip=0pt,
+    %     belowskip=6pt
+    % }
+\lstdefinestyle{PythonStyle}{
+  keywordstyle=\bf,
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  language=Python,
+  showstringspaces=false,
+  basicstyle=\small\ttfamily,
+  commentstyle=\itshape
+}
+% \lstdefinestyle{PythonStyle}{
+% basicstyle=\footnotesize\ttfamily,
+% language=Python,
+% keywordstyle=\bfseries,
+% showstringspaces=false,
+% commentstyle={},
+% texcl=true
+% }
+
+\graphicspath{{../}}
+
+%\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
