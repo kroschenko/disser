@@ -1,0 +1,89 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: man-thesisby.aux
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: termins.aux
+A level-1 auxiliary file: reduction.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: description_of_work.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: conclusions.aux
+A level-1 auxiliary file: references.aux
+The style file: gost71u2003.bst
+A level-1 auxiliary file: appendixes/appendix_example.aux
+Database file #1: biblio/othercites.bib
+Warning--I didn't find a database entry for "1-A"
+Warning--I didn't find a database entry for "4-A"
+Warning--I didn't find a database entry for "5-A"
+Warning--I didn't find a database entry for "26-A"
+Warning--I didn't find a database entry for "2-A"
+Warning--I didn't find a database entry for "3-A"
+Warning--I didn't find a database entry for "10-A"
+Warning--I didn't find a database entry for "12-A"
+Warning--I didn't find a database entry for "13-A"
+Warning--I didn't find a database entry for "17-A"
+Warning--I didn't find a database entry for "18-A"
+Warning--I didn't find a database entry for "19-A"
+Warning--I didn't find a database entry for "20-A"
+Warning--I didn't find a database entry for "21-A"
+Warning--I didn't find a database entry for "11-A"
+Warning--I didn't find a database entry for "16-A"
+Warning--I didn't find a database entry for "30-A"
+Warning--I didn't find a database entry for "6-A"
+Warning--I didn't find a database entry for "7-A"
+Warning--I didn't find a database entry for "8-A"
+Warning--I didn't find a database entry for "22-A"
+Warning--I didn't find a database entry for "23-A"
+Warning--I didn't find a database entry for "24-A"
+Warning--I didn't find a database entry for "25-A"
+Warning--I didn't find a database entry for "27-A"
+Warning--I didn't find a database entry for "9-A"
+Warning--I didn't find a database entry for "14-A"
+Warning--I didn't find a database entry for "15-A"
+Warning--can't use both volume and number fields in mitchell1997machine
+Warning--empty journal in krizhevsky2009learning
+You've used 86 entries,
+            2651 wiz_defined-function locations,
+            1199 strings with 19716 characters,
+and the built_in function-call counts, 28766 in all, are:
+= -- 3935
+> -- 629
+< -- 105
++ -- 239
+- -- 153
+* -- 1424
+:= -- 3608
+add.period$ -- 347
+call.type$ -- 86
+change.case$ -- 70
+chr.to.int$ -- 0
+cite$ -- 88
+duplicate$ -- 1333
+empty$ -- 2753
+format.name$ -- 220
+if$ -- 7673
+int.to.chr$ -- 0
+int.to.str$ -- 86
+missing$ -- 0
+newline$ -- 545
+num.names$ -- 138
+pop$ -- 491
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 191
+skip$ -- 932
+stack$ -- 0
+substring$ -- 1400
+swap$ -- 498
+text.length$ -- 36
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 190
+width$ -- 88
+write$ -- 1505
+(There were 30 warnings)

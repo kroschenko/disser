@@ -1,0 +1,658 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{mitchell1997machine}
+\selectlanguageifdefined{english}
+Mitchell,~T.~M. Machine learning~/ T.~M. Mitchell. "---
+\newblock McGraw-hill New York, 1997. "---
+\newblock Vol.~1.
+
+\bibitem{kandel}
+\selectlanguageifdefined{english}
+Kandel,~E.~R. In Search of Memory: The Emergence of a New Science of Mind~/
+  E.~R. Kandel. "---
+\newblock New York: W. W. Norton \& Company, 2006.
+
+\bibitem{Cybenko1989ApproximationBS}
+\selectlanguageifdefined{english}
+Cybenko,~G.~V. Approximation by superpositions of a sigmoidal function~/ G.~V.
+  Cybenko~// Mathematics of Control, Signals and Systems. "---
+\newblock 1989. "---
+\newblock Vol.~2. "---
+\newblock P.~303--314.
+
+\bibitem{golovko2017}
+\selectlanguageifdefined{russian}
+Головко,~В.~А. Нейросетевые технологии
+  обработки данных~/ В.~А. Головко, В.~В.
+  Краснопрошин. "---
+\newblock Минск: БГУ, 2017.
+
+\bibitem{ivakhnenko1967cybernetics}
+\selectlanguageifdefined{english}
+Ivakhnenko,~A.~G. Cybernetics and Forecasting Techniques~/ A.~G. Ivakhnenko,
+  V.~G. Lapa. Modern analytic and computational methods in science and
+  mathematics. "---
+\newblock American Elsevier Publishing Company, 1967. \BibUrl{
+  https://books.google.by/books?id=z7hPAQAAIAAJ}.
+
+\bibitem{Elman1990FindingSI}
+\selectlanguageifdefined{english}
+Elman,~J.~L. Finding structure in time~/ J.~L. Elman~// Cogn. Sci. "---
+\newblock 1990. "---
+\newblock Vol.~14. "---
+\newblock P.~179--211.
+
+\bibitem{Jordan1997SerialOA}
+\selectlanguageifdefined{english}
+Jordan,~M.~I. Serial order: A parallel distributed processing approach~/ M.~I.
+  Jordan~// Advances in psychology. "---
+\newblock 1997. "---
+\newblock Vol. 121. "---
+\newblock P.~471--495.
+
+\bibitem{Hinton1987LearningRB}
+\selectlanguageifdefined{english}
+Hinton,~G.~E. Learning representations by recirculation~/ G.~E. Hinton, J.~L.
+  McClelland~// NIPS. "---
+\newblock 1987.
+
+\bibitem{fukushima1980}
+\selectlanguageifdefined{english}
+Fukushima,~K. Neocognitron: A self-organizing neural network model for a
+  mechanism of pattern recognition unaffected by shift in position~/
+  K.~Fukushima~// Biological Cybernetics. "---
+\newblock Vol.~36. "---
+\newblock 1980. "---
+\newblock P.~193--202.
+
+\bibitem{LeCun1989HandwrittenDR}
+\selectlanguageifdefined{english}
+Handwritten digit recognition with a back-propagation network~/ Y.~LeCun, B.~E.
+  Boser, J.~S. Denker [et~al]~// NIPS. "---
+\newblock 1989.
+
+\bibitem{kohonen2001}
+\selectlanguageifdefined{english}
+Kohonen,~T. Self-organizing maps~/ T.~Kohonen. "---
+\newblock Berlin: Springer, 2001.
+
+\bibitem{Grossberg1987CompetitiveLF}
+\selectlanguageifdefined{english}
+Grossberg,~S. Competitive learning: From interactive activation to adaptive
+  resonance~/ S.~Grossberg~// Cogn. Sci. "---
+\newblock 1987. "---
+\newblock Vol.~11. "---
+\newblock P.~23--63.
+
+\bibitem{Hopfield1984}
+\selectlanguageifdefined{english}
+Hopfield,~J.~J. Neurons with graded response have collective computational
+  properties like those of two-state neurons.~/ J.~J. Hopfield~// Proceedings
+  of the National Academy of Sciences. "---
+\newblock 1984. "---
+\newblock Vol.~81, {\cyr\textnumero}~10. "---
+\newblock P.~3088--3092.
+
+\bibitem{Lippmann1987}
+\selectlanguageifdefined{english}
+Lippmann,~R. An introduction to computing with neural nets~/ R.~Lippmann~//
+  IEEE ASSP Magazine. "---
+\newblock 1987. "---
+\newblock Vol.~4, {\cyr\textnumero}~2. "---
+\newblock P.~4--22.
+
+\bibitem{Kosko1988BidirectionalAM}
+\selectlanguageifdefined{english}
+Kosko,~B. Bidirectional associative memories~/ B.~Kosko~// IEEE Trans. Syst.
+  Man Cybern. "---
+\newblock 1988. "---
+\newblock Vol.~18. "---
+\newblock P.~49--60.
+
+\bibitem{HechtNielsen1987}
+\selectlanguageifdefined{english}
+Hecht-Nielsen,~R. Counterpropagation networks~/ R.~Hecht-Nielsen~// Appl. Opt.
+  "---
+\newblock 1987. "---
+\newblock Vol.~26, {\cyr\textnumero}~23. "---
+\newblock P.~4979--4984.
+
+\bibitem{Broomhead1988}
+\selectlanguageifdefined{english}
+Broomhead,~D. Radial basis functions, multi-variable functional interpolation
+  and adaptive networks~/ D.~Broomhead, D.~Lowe~// Royal Signals and Radar
+  Establishment Malvern (United Kingdom). "---
+\newblock 1988. "---
+\newblock Vol. RSRE-MEMO-4148.
+
+\bibitem{Jang1997}
+\selectlanguageifdefined{english}
+Jang,~J.-S. Neuro-fuzzy and soft computing-a computational approach to learning
+  and machine intelligence [book review]~/ J.-S. Jang, C.-T. Sun,
+  E.~Mizutani~// Automatic Control, IEEE Transactions on. "---
+\newblock 1997. "---
+\newblock Vol.~42. "---
+\newblock P.~1482 -- 1484.
+
+\bibitem{Golovko2010}
+\selectlanguageifdefined{english}
+Neural Network and Artificial Immune Systems for Malware and Network Intrusion
+  Detection~/ Vladimir Golovko, Sergei Bezobrazov, Pavel Kachurka, Leanid
+  Vaitsekhovich~// Advances in Machine Learning II: Dedicated to the Memory of
+  Professor Ryszard S.Michalski. "---
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2010. "---
+\newblock P.~485--513.
+
+\bibitem{LeCun2015}
+\selectlanguageifdefined{english}
+LeCun,~Y. Deep learning~/ Y.~LeCun, Y.~Bengio, G.~Hinton~// Nature. "---
+\newblock 2015. "---
+\newblock {\cyr\textnumero} 521 (7553). "---
+\newblock P.~436--444.
+
+\bibitem{Emmert2020}
+\selectlanguageifdefined{english}
+An introductory review of deep learning for prediction models with big data~/
+  Frank Emmert-Streib, Zhen Yang, Han Feng [et~al]~// Frontiers in Artificial
+  Intelligence. "---
+\newblock 2020. "---
+\newblock Vol.~3.
+
+\bibitem{mildenhall2020nerf}
+\selectlanguageifdefined{english}
+Nerf: Representing scenes as neural radiance fields for view synthesis~/
+  B.~Mildenhall, P.~P. Srinivasan, M.~Tancik [et~al]~// ECCV. "---
+\newblock 2020.
+
+\bibitem{n5}
+\selectlanguageifdefined{english}
+Bengio,~Y. Learning deep architectures for ai~/ Y.~Bengio~// Foundations and
+  Trends in Machine Learning. "---
+\newblock 2009. "---
+\newblock {\cyr\textnumero} 2(1). "---
+\newblock P.~1--127.
+
+\bibitem{n3}
+\selectlanguageifdefined{english}
+Hinton,~G. Reducing the dimensionality of data with neural networks~/
+  G.~Hinton, R.~Salakhutdinov~// Science. "---
+\newblock 2006. "---
+\newblock {\cyr\textnumero} 313 (5786). "---
+\newblock P.~504--507.
+
+\bibitem{mcculloch43a}
+\selectlanguageifdefined{english}
+Mcculloch,~W. A logical calculus of ideas immanent in nervous activity~/
+  W.~Mcculloch, W.~Pitts~// Bulletin of Mathematical Biophysics. "---
+\newblock 1943. "---
+\newblock Vol.~5. "---
+\newblock P.~127--147.
+
+\bibitem{hebb1949}
+\selectlanguageifdefined{english}
+Hebb,~D.~O. The organization of behavior: {A} neuropsychological theory~/ D.~O.
+  Hebb. "---
+\newblock New York: Wiley, 1949.
+
+\bibitem{widrow1960}
+\selectlanguageifdefined{english}
+Widrow,~B. Adaptive switching circuits~/ B.~Widrow, M.~E. Hoff~// 1960 {IRE}
+  {WESCON} Convention Record, Part 4. "---
+\newblock New York: {IRE}, 1960. "---
+\newblock P.~96--104.
+
+\bibitem{rosenblatt1959}
+\selectlanguageifdefined{english}
+Rosenblatt,~F. Principles of Neurodynamics~/ F.~Rosenblatt. "---
+\newblock Spartan Books, 1959.
+
+\bibitem{minsky69perceptrons}
+\selectlanguageifdefined{english}
+Minsky,~M. Perceptrons: An Introduction to Computational Geometry~/ M.~Minsky,
+  S.~Papert. "---
+\newblock Cambridge, MA, USA: MIT Press, 1969.
+
+\bibitem{Grossberg1976}
+\selectlanguageifdefined{english}
+Grossberg,~S. Adaptive pattern classification and universal recoding: Ii.
+  feedback, expectation, olfaction, illusions~/ S.~Grossberg~// Biol. Cybern.
+  "---
+\newblock 1976. "---
+\newblock Vol.~23, {\cyr\textnumero}~4. "---
+\newblock P.~187–202.
+
+\bibitem{Kohonen1977}
+\selectlanguageifdefined{english}
+Kohonen,~T. Associative memory: a system-theoretical approach~/ T.~Kohonen.
+  "---
+\newblock Springer-Verlag Berlin ; New York, 1977. "---
+\newblock P.~176.
+
+\bibitem{rumelhart1986learning}
+\selectlanguageifdefined{english}
+Rumelhart,~D.~E. Learning representations by back-propagating errors~/ D.~E.
+  Rumelhart, G.~E. Hinton, R.~J. Williams~// nature. "---
+\newblock 1986. "---
+\newblock Vol. 323, {\cyr\textnumero} 6088. "---
+\newblock P.~533--536.
+
+\bibitem{Corinna1995}
+\selectlanguageifdefined{english}
+Cortes,~C. Support-vector networks~/ C.~Cortes, V.~Vapnik~// Mach. Learn. "---
+\newblock 1995. "---
+\newblock Vol.~20, {\cyr\textnumero}~3. "---
+\newblock P.~273–297.
+
+\bibitem{Behnke2003}
+\selectlanguageifdefined{Undetermined}
+Behnke,~S. Hierarchical Neural Networks for Image Interpretation~/ S.~Behnke.
+  Lecture Notes in Computer Science. "---
+\newblock Springer Berlin, Heidelberg, 2003.
+
+\bibitem{n1}
+\selectlanguageifdefined{english}
+Hinton,~G.~E. A fast learning algorithm for deep belief nets~/ G.~E. Hinton,
+  S.~Osindero, Y.~Teh~// Neural Computation. "---
+\newblock 2006. "---
+\newblock {\cyr\textnumero}~18. "---
+\newblock P.~1527--1554.
+
+\bibitem{alpaca2023}
+\selectlanguageifdefined{english}
+Taori,~R. Alpaca: A strong, replicable instruction-following model. "---
+\newblock Режим доступа:
+  https://crfm.stanford.edu/2023/03/13/alpaca.html. "---
+\newblock 2023. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{alpacagithub}
+\selectlanguageifdefined{english}
+Taori,~R. Stanford alpaca: An instruction-following llama model. "---
+\newblock \url{https://github.com/tatsu-lab/stanford\_alpaca}. "---
+\newblock 2023. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{zhang2022opt}
+\selectlanguageifdefined{english}
+Zhang,~S. Opt: Open pre-trained transformer language models. "---
+\newblock 2022.
+
+\bibitem{Glorot2011}
+\selectlanguageifdefined{english}
+Glorot,~X. Deep sparse rectifier networks~/ X.~Glorot, A.~Bordes, Y.~Bengio~//
+  Proceedings of the 14th International Conference on Artificial Intelligence
+  and Statistics. "---
+\newblock Vol.~15. "---
+\newblock 2011. "---
+\newblock P.~315--323.
+
+\bibitem{Haykin2006}
+\selectlanguageifdefined{russian}
+Хайкин,~С. Нейронные сети: полный курс, 2-е
+  издание~/ С. Хайкин. "---
+\newblock Москва: Издательский дом <<Вильямс>>,
+  2006. "---
+\newblock 1104~{\cyr\cyrs.}
+
+\bibitem{Goodfellow2017}
+\selectlanguageifdefined{russian}
+Гудфеллоу,~Я. Глубокое обучение~/ Я.
+  Гудфеллоу, И. Бенджио, А. Курвилль. "---
+\newblock Москва\space: ДМК Пресс, 2017. "---
+\newblock 652~{\cyr\cyrs.}
+
+\bibitem{Duchi2011}
+\selectlanguageifdefined{english}
+Duchi,~J. Adaptive subgradient methods for online learning and stochastic
+  optimization~/ J.~Duchi, E.~Hazan, Y.~Singer~// Journal of Machine Learning
+  Research. "---
+\newblock 2011.
+
+\bibitem{Kingma2014}
+\selectlanguageifdefined{english}
+Kingma,~D. Adam: A method for stochastic optimization~/ D.~Kingma, J.~Ba~// 3rd
+  International Conference for Learning Representations. "---
+\newblock 2014.
+
+\bibitem{n2}
+\selectlanguageifdefined{english}
+Hinton,~G. Training products of experts by minimizing contrastive divergence~/
+  G.~Hinton~// Neural Computation. "---
+\newblock 2002. "---
+\newblock {\cyr\textnumero}~14. "---
+\newblock P.~1771--1800.
+
+\bibitem{n4}
+\selectlanguageifdefined{english}
+Hinton,~G.~E. A practical guide to training restricted boltzmann machines:
+  Tech. Rep. 2010-000~/ G.~E. Hinton: University of Toronto, 2010.
+
+\bibitem{hinton1995}
+\selectlanguageifdefined{english}
+The ``wake-sleep'' algorithm for unsupervised neural networks~/ G.~E. Hinton,
+  P.~Dayan, B.~J. Frey, R.~M. Neal~// Science. "---
+\newblock 1995. "---
+\newblock Vol. 268, {\cyr\textnumero} 5214. "---
+\newblock P.~1158--1161.
+
+\bibitem{n6}
+\selectlanguageifdefined{english}
+Greedy layer-wise training of deep networks~/ Y.~Bengio, P.~Lamblin,
+  D.~Popovici, H.~Larochelle~// Advances in neural information processing
+  systems. "---
+\newblock MA: MIT Press, Cambridge, 2007. "---
+\newblock P.~153--160.
+
+\bibitem{Amaral2013}
+\selectlanguageifdefined{english}
+Using different cost functions to train stacked auto-encoders~/ T.~Amaral,
+  L.~Silva, L.~Alexandre [et~al]~// 12th Mexican International Conference on
+  Artificial Intelligence. "---
+\newblock 2013. "---
+\newblock P.~114--120.
+
+\bibitem{gibbs1902}
+\selectlanguageifdefined{english}
+Gibbs,~J.~W. Elementary Principles in Statistical Mechanics: Developed with
+  Especial Reference to the Rational Foundations of Thermodynamics~/ J.~W.
+  Gibbs. "---
+\newblock C. Scribner's sons, 1902.
+
+\bibitem{n10}
+\selectlanguageifdefined{english}
+Neural network model for transient ischemic attacks diagnostics~/ V.~Golovko,
+  H.~Vaitsekhovich, E.~Apanel, A.~Mastykin~// Optical Memory and Neural
+  Networks (Information Optics). "---
+\newblock 2012. "---
+\newblock {\cyr\textnumero} 21(3). "---
+\newblock P.~166--176.
+
+\bibitem{mostafa2019parameter}
+\selectlanguageifdefined{english}
+Mostafa,~H. Parameter efficient training of deep convolutional neural networks
+  by dynamic sparse reparameterization. "---
+\newblock 2019.
+
+\bibitem{han2015learning}
+\selectlanguageifdefined{english}
+Han,~S. Learning both weights and connections for efficient neural networks.
+  "---
+\newblock 2015.
+
+\bibitem{mnist}
+\selectlanguageifdefined{english}
+LeCun,~Y. The mnist database of handwritten digits. "---
+\newblock Режим доступа: \url{http://yann.lecun.com/exdb/mnist/}.
+  "---
+\newblock Дата доступа: 2023-03-05.
+
+\bibitem{krizhevsky2009learning}
+\selectlanguageifdefined{english}
+Krizhevsky,~A. Learning multiple layers of features from tiny images~/
+  A.~Krizhevsky. "---
+\newblock 2009. "---
+\newblock P.~32--33.
+
+\bibitem{n11}
+\selectlanguageifdefined{english}
+Scholz,~M. Nonlinear principal component analysis: neural network models and
+  applications~/ M.~Scholz, M.~Fraunholz, J.~Selbig. "---
+\newblock Springer, 2008. "---
+\newblock P.~44--67.
+
+\bibitem{googlecolab}
+\selectlanguageifdefined{english}
+Perry,~C. Colab's 'pay as you go' offers more access to powerful nvidia compute
+  for machine learning. "---
+\newblock Режим доступа:
+  \url{https://blog.tensorflow.org/2022/09/colabs-pay-as-you-go-offers-more-access-to-powerful-nvidia-compute-for-machine-learning.html}.
+  "---
+\newblock Дата доступа: 2023-03-05.
+
+\bibitem{n16}
+\selectlanguageifdefined{english}
+Turchenko,~V. Parallel batch pattern training algorithm for deep neural
+  network~/ V.~Turchenko, V.~Golovko~// High Performance Computing \&
+  Simulation (HPCS). "---
+\newblock IEEE, 2014. "---
+\newblock P.~697--702.
+
+\bibitem{torralba2008}
+\selectlanguageifdefined{english}
+Torralba,~A. 80 million tiny images: A large data set for nonparametric object
+  and scene recognition~/ A.~Torralba, R.~Fergus, W.~T. Freeman~// IEEE
+  Transactions on Pattern Analysis and Machine Intelligence. "---
+\newblock 2008. "---
+\newblock Vol.~30, {\cyr\textnumero}~11. "---
+\newblock P.~1958--1970.
+
+\bibitem{omron}
+\selectlanguageifdefined{english}
+Omron documentation. "---
+\newblock Режим доступа:
+  \url{https://robotics.omron.com/browse-documents}. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{liu}
+\selectlanguageifdefined{english}
+Liu,~W. Ssd: Single shot multibox detector. "---
+\newblock Режим доступа: \url{https://arxiv.org/abs/1512.02325}.
+  "---
+\newblock 2015. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{howard}
+\selectlanguageifdefined{english}
+Howard,~A. Mobilenets: Efficient convolutional neural networks for mobile
+  vision applications. "---
+\newblock Режим доступа: \url{https://arxiv.org/abs/1704.04861}.
+  "---
+\newblock 2017. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{ren}
+\selectlanguageifdefined{english}
+Ren,~S. Faster r-cnn: Towards real-time object detection with region proposal
+  networks. "---
+\newblock Режим доступа: \url{https://arxiv.org/abs/1506.01497}.
+  "---
+\newblock 2016. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{he}
+\selectlanguageifdefined{english}
+He,~K. Deep residual learning for image recognition. "---
+\newblock Режим доступа: \url{https://arxiv.org/abs/1512.03385}.
+  "---
+\newblock 2015. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{netzer}
+\selectlanguageifdefined{english}
+Reading digits in natural images with unsupervised feature learning~/
+  Y.~Netzer, T.~Wang, A.~Coates [et~al]~// NIPS Workshop on Deep Learning and
+  Unsupervised Feature Learning. "---
+\newblock 2011.
+
+\bibitem{seia}
+\selectlanguageifdefined{english}
+Solar industry data // seia.org. "---
+\newblock Режим доступа:
+  \url{https://www.seia.org/solar-industry-research-data}. "---
+\newblock 2020. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{lekun1998}
+\selectlanguageifdefined{english}
+Gradient-based learning applied to document recognition~/ Y.~LeCun, L.~Bottou,
+  Y.~Bengio, P.~Haffner~// Proceedings of the IEEE. "---
+\newblock Vol.~86. "---
+\newblock 1998. "---
+\newblock P.~2278--2324.
+
+\bibitem{malof2015}
+\selectlanguageifdefined{english}
+Automatic solar photovoltaic panel detection in satellite imagery~/ J.~Malof,
+  R.~Hou, L.~Collins [et~al]~// International Conference on Renewable Energy
+  Research and Applications ICRERA’ 2015. "---
+\newblock 2015.
+
+\bibitem{malof2016}
+\selectlanguageifdefined{english}
+Automatic detection of solar photovoltaic arrays in high resolution aerial
+  imagery~/ J.~Malof, K.~Bradbury, L.~Collins, R.~Newell~// Applied Energy.
+  "---
+\newblock Vol.~183. "---
+\newblock 2016. "---
+\newblock P.~229--240.
+
+\bibitem{bradbury2016}
+\selectlanguageifdefined{english}
+Bradbury,~K. Distributed solar photovoltaic array location and extend data set
+  for remote sensing object identification. "---
+\newblock Режим доступа:
+  \url{http://dx.doi.org/10.6084/m9.figshare.3385780.v1}. "---
+\newblock 2016. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{lin2015}
+\selectlanguageifdefined{english}
+Lin,~T. Microsoft coco: Common objects in context. "---
+\newblock Режим доступа: \url{https://arxiv.org/pdf/1405.0312.pdf}.
+  "---
+\newblock 2015. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{n7}
+\selectlanguageifdefined{english}
+Why does unsupervised pre-training help deep learning?~/ D.~Erhan, Y.~Bengio,
+  A.~Courville [et~al]~// Journal of Machine Learning Research. "---
+\newblock 2010. "---
+\newblock {\cyr\textnumero}~11. "---
+\newblock P.~625--660.
+
+\bibitem{n8}
+\selectlanguageifdefined{english}
+Hinton,~G. Greedy layer-wise algorithm~/ G.~Hinton~// Journal of Machine
+  Learning Research. "---
+\newblock 2009. "---
+\newblock {\cyr\textnumero}~1. "---
+\newblock P.~1--40.
+
+\bibitem{n15}
+\selectlanguageifdefined{english}
+Ciresan,~D. Multi-column deep neural networks for image classification~/
+  D.~Ciresan, U.~Meier, J.~Schmidhuber~// IEEE Conference on Computer Vision
+  and Pattern Recognition. "---
+\newblock IEEE, 2012. "---
+\newblock P.~3642--3649.
+
+\bibitem{golik2013}
+\selectlanguageifdefined{english}
+Golik,~P. Cross-entropy vs. squared error training: a theoretical and
+  experimental comparison~/ P.~Golik, P.~Doetsch, H.~Ney~// Interspeech. "---
+\newblock Lyon, France: 2013. "---
+\newblock P.~1756--1760.
+
+\bibitem{Zhou}
+\selectlanguageifdefined{english}
+Zhou,~P. Learning criteria for training neural network classifiers~/ P.~Zhou,
+  J.~Austin~// Neural Computing \& Applications. "---
+\newblock 1998. "---
+\newblock {\cyr\textnumero} 7(4). "---
+\newblock P.~334--342.
+
+\bibitem{Fisher}
+\selectlanguageifdefined{english}
+Fisher,~R. The use of multiple measurements in taxonomic problems~/
+  R.~Fisher~// Annals of Eugenics. "---
+\newblock 1936. "---
+\newblock {\cyr\textnumero}~7. "---
+\newblock P.~179--188.
+
+\bibitem{Golovko2015a}
+\selectlanguageifdefined{russian}
+Головко,~В.~А. От многослойных персептронов
+  к нейронным сетям глубокого доверия:
+  парадигмы обучения и применение~/ В.~А.
+  Головко~// Лекции по Нейроинформатике. "---
+\newblock НИЯУ МИФИ, 2015. "---
+\newblock {\cyr\CYRS.}~47--84.
+
+\bibitem{Krizhevsky2012}
+\selectlanguageifdefined{english}
+Krizhevsky,~A. Imagenet classification with deep convolutional neural networs~/
+  A.~Krizhevsky, L.~Sutskever, G.~Hinton~// In Proc. Advances in Neural
+  information Processing Systems. "---
+\newblock Vol.~25. "---
+\newblock Curran Associates, Inc., 2012. "---
+\newblock P.~1090--1098.
+
+\bibitem{Rosenblatt1962}
+\selectlanguageifdefined{english}
+Rosenblatt,~F. Principles of neurodynamics: perceptrons and the theory of brain
+  mechanisms~/ F.~Rosenblatt. "---
+\newblock Washington: Spartan Books, 1962.
+
+\bibitem{Widrow}
+\selectlanguageifdefined{english}
+Widrow,~B. Adaptive switching circuits~/ B.~Widrow, M.~Hoff~// In 1960 IRE
+  WESCON Convention Record. "---
+\newblock 1960. "---
+\newblock P.~96--104.
+
+\bibitem{datamatrix}
+\selectlanguageifdefined{russian}
+Gs1 datamatrix -- electronic sign. "---
+\newblock Режим доступа:
+  \url{https://datamark.by/voprosy-otvety/gs1-datamatrix}. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{milk}
+\selectlanguageifdefined{russian}
+Milk products -- electronic sign. "---
+\newblock Режим доступа:
+  \url{https://datamark.by/markirovka-molochnoy-produktsii}. "---
+\newblock Дата доступа: 05.03.2023.
+
+\bibitem{facenet}
+\selectlanguageifdefined{english}
+Schroff,~F. Facenet: A unified embedding for face recognition and clustering~/
+  F.~Schroff, D.~Kalenichenko, J.~Philbin~// Proceedings of the IEEE Conference
+  on Computer Vision and Pattern Recognition (CVPR). "---
+\newblock 2015. "---
+\newblock P.~815--823.
+
+\bibitem{resnet}
+\selectlanguageifdefined{english}
+Deep residual learning for image recognition~/ K.~He, X.~Zhang, S.~Ren,
+  J.~Sun~// Proceedings of the IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR). "---
+\newblock 2016. "---
+\newblock P.~770--778.
+
+\bibitem{dlib}
+\selectlanguageifdefined{english}
+King,~D.~E. Dlib-ml: A machine learning toolkit~/ D.~E. King~// Journal of
+  Machine Learning Research. "---
+\newblock Vol.~10. "---
+\newblock 2009. "---
+\newblock P.~1755--1758.
+
+\bibitem{mtcnn}
+\selectlanguageifdefined{english}
+Joint face detection and alignment using multitask cascaded convolutional
+  networks~/ K.~Zhang, Z.~Zhang, Z.~Li, Y.~Qiao~// in IEEE Signal Processing
+  Letters. "---
+\newblock Vol.~23. "---
+\newblock 2016. "---
+\newblock P.~1499--1503.
+
+\end{thebibliography}
