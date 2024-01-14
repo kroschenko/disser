@@ -607,7 +607,9 @@ LaTeX document class for thesis]
 \def\fps@figure{tbp}
 \def\ftype@figure{1}
 \def\ext@figure{lof}
-\def\fnum@figure{\figurename~\thefigure}
+\def\fnum@figure{
+  \figurename~\thefigure
+}
 \newenvironment{figure}
                {\@float{figure}}
                {\end@float}
@@ -636,9 +638,9 @@ LaTeX document class for thesis]
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
   \ifx\@captype\captable
-  \normalfont #1. -- #2 \par
+  \normalfont #1 -- #2 \par
   \else
-  \small \bfseries \centering #1. -- #2
+  \bfseries \centering #1 -- #2
   \fi
   \vskip\belowcaptionskip}
 \DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
