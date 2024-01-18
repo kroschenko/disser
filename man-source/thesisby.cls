@@ -457,7 +457,11 @@ LaTeX document class for thesis]
     \fi
     \centering
     \interlinepenalty\@M
-    \MakeUppercase{\normalfont \bfseries #1}\par\nobreak
+    \ifx\isappendix\undefined 
+      \MakeUppercase{\normalfont \bfseries #1}\par\nobreak
+    \else
+      \normalfont \bfseries #1\par\nobreak
+    \fi
     \vskip 40\p@
   }}
 \def\@schapter#1{\@makeschapterhead{#1}%
@@ -582,6 +586,7 @@ LaTeX document class for thesis]
 }
 
 \newcommand\appendix{\par
+  \def\isappendix{1}
   \setcounter{chapter}{0}%
   \setcounter{section}{0}%
   \renewcommand{\@chapternameposition}{\@appendixnameposition}
