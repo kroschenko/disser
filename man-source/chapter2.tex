@@ -516,7 +516,6 @@ $n$ -- количество нейронов на видимом слое.
 \begin{multline*}
 	\frac{\partial CE(1)}{\partial T_i} = \frac{\partial CE_v(1)}{\partial T_i} = -\frac{x_i(0)}{x_i(1)}x_i(1)(1-x_i(1))+\frac{1-x_i(0)}{1-x_i(1)}x_i(1)(1-x_i(1)) = \\ = -x_i(0) + x_i(0)x_i(1)+x_i(1)-x_i(0)x_i(1) = x_i(1)-x_i(0);
 \end{multline*}
-
 \begin{multline*}
 	\frac{\partial CE(1)}{\partial T_j} = \frac{\partial CE_h(1)}{\partial T_j} = -y_j(0)(1-y_j(1)) + (1-y_j(0))y_j(1) = \\ = -y_j(0) + y_j(0)y_j(1) + y_j(1) - y_j(0)y_j(1) = y_j(1) - y_j(0).
 \end{multline*}
@@ -556,7 +555,6 @@ $n$ -- количество нейронов на видимом слое.
 \begin{multline*}
 	\frac{\partial CE_s(k)}{\partial T_i} = \frac{\partial CE_v(k)}{\partial T_i} =\\= -\sum_{p=1}^k (x_i(p-1)(1-x_i(p))-(1-x_i(p-1))x_i(p)) =\\= \sum_{p=1}^k (x_i(p) - x_i(p-1)) = x_i(1)-x_i(0)+x_i(2) - x_i(1) +\dots+x_i(k)-x_i(k-1) =\\= x_i(k)-x_i(0);
 \end{multline*}
-
 \begin{multline*}
 	\frac{\partial CE_s(k)}{\partial T_j} = \frac{\partial CE_h(k)}{\partial T_j} =\\= -\sum_{p=1}^k (y_j(p-1)(1-y_j(p))-(1-y_j(p-1))y_j(p)) =\\= \sum_{p=1}^k (y_j(p) - y_j(p-1)) = y_j(1)-y_j(0)+y_j(2) - y_j(1) +\dots+y_j(k)-y_j(k-1) =\\= y_j(k)-y_j(0).
 \end{multline*}
@@ -595,7 +593,7 @@ $n$ -- количество нейронов на видимом слое.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.4\textwidth]{man-source/images/ch2/pic2-5.png}
+  \includegraphics[width=0.3\textwidth]{man-source/images/ch2/pic2-5.png}
   \caption{Разряженный автоэнкодер операции свертки}
   \label{fig:convolution_autoencoder}
 \end{figure}
@@ -649,14 +647,7 @@ $n$ -- количество нейронов на видимом слое.
 
 Введем условное обозначение для операции <<развертки>> -- $\circledast$.
 
-Применяя полученную формулу для выполнения <<развертки>>, можно осуществлять процедуру CD на сверточных слоях ГНС, которые в этом случае рассматриваются как сверточные ограниченные машины Больцмана (CRBM, рисунок \ref{fig:crbm}). 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.4\textwidth]{man-source/images/ch2/pic2-n.png}
-	\caption{Визуализация CRBM}
-	\label{fig:crbm}
-  \end{figure}
+Применяя полученную формулу для выполнения <<развертки>>, можно осуществлять процедуру CD на сверточных слоях ГНС, которые в этом случае рассматриваются как сверточные ограниченные машины Больцмана (CRBM). 
 
 Рассмотрим формулы для получения необходимых карт признаков для расчета градиента изменения параметров слоя в случае использования процедуры CD-1: 
 \begin{equation*}

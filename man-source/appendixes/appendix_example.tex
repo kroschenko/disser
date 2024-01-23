@@ -11,7 +11,6 @@ class UnifiedClassifier(nn.Module):
         super().__init__()
         self.layers = nn.ModuleList()
         self.a_functions = []
-        print(layers_config["architecture"])
         self.layers_config = layers_config["architecture"]
         layer_index = 0
         for layer in self.layers_config:
@@ -227,13 +226,11 @@ import torch.nn.functional as F
 from common_types import PretrainingType, DatasetType, Statistics
 from models import RBM
 
-
 def get_random_seeds(count):
     seeds = []
     for i in range(0, count):
         seeds.append(random.randint(0, config.max_random_seed))
     return seeds
-
 
 def get_dataset_constructor(dataset_type: DatasetType):
     dataset_selector = {
@@ -243,12 +240,10 @@ def get_dataset_constructor(dataset_type: DatasetType):
     }
     return dataset_selector[dataset_type]
 
-
 def train_rbm_with_custom_dataset(train_set, device, rbm, pretrain_type, batches_count):
     train_func = train_rbm if isinstance(rbm, RBM) else train_crbm
     losses, output_shape = train_func(rbm, device, batches_count, train_set, pretrain_type)
     return output_shape
-
 
 def train_rbm(rbm, device, batches_count, train_set, pretrain_type):
     delta_weights = torch.zeros(rbm.W.shape).to(device)
@@ -286,10 +281,8 @@ def train_rbm(rbm, device, batches_count, train_set, pretrain_type):
             part_loss = ((v1 - v0) ** 2).sum()
             loss += part_loss.item()
             i += 1
-        print(loss)
         losses.append(loss)
     return losses, h0.shape
-
 
 def train_crbm(rbm, device, batches_count, train_set, pretrain_type):
     delta_weights = torch.zeros(rbm.W.shape).to(device)
@@ -323,10 +316,8 @@ def train_crbm(rbm, device, batches_count, train_set, pretrain_type):
             rbm.W -= delta_weights
             loss += ((v1 - v0) ** 2).sum()
             i += 1
-        print(loss.item())
         losses.append(loss.item())
     return losses, h0.shape
-
 
 def train_torch_model(model, train_loader, test_loader, optimizer, criterion, device):
     best_total_accuracy = 0
@@ -335,23 +326,18 @@ def train_torch_model(model, train_loader, test_loader, optimizer, criterion, de
         running_loss = 0.0
         for i, data in enumerate(train_loader, 0):
             inputs, labels = data[0].to(device), data[1].to(device)
-
             optimizer.zero_grad()
-
             outputs = model(inputs)
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
-
             running_loss += loss.item()
         if epoch % config.test_every_epochs == 0:
             current_accuracy = test_torch_model(model, test_loader, device)
             if current_accuracy > best_total_accuracy:
                 best_total_accuracy = current_accuracy
         losses.append(running_loss)
-        print(running_loss)
     return best_total_accuracy, losses
-
 
 def test_torch_model(model, test_loader, device):
     correct_answers = 0
@@ -363,7 +349,6 @@ def test_torch_model(model, test_loader, device):
             correct_answers += (predictions == labels).sum()
     return 100 * float(correct_answers) / len(test_loader.dataset)
 
-
 def run_experiment(layers_config, pretrain_type, meta_data, device, init_type, without_sampling):
     rbm_stack = RBMStack(layers_config, device, init_type, without_sampling)
     layers_losses = None
@@ -373,16 +358,12 @@ def run_experiment(layers_config, pretrain_type, meta_data, device, init_type, w
         layers_losses = rbm_stack.train(train_set, pretrain_type)
         if config.with_reduction:
             rbm_stack.do_reduction(layers_config)
-
     classifier = UnifiedClassifier(layers_config).to(device)
     rbm_stack.torch_model_init_from_weights(classifier)
-
     criterion = nn.CrossEntropyLoss(reduction="sum")
     optimizer = optim.SGD(classifier.parameters(), lr=config.finetune_rate, momentum=config.finetuning_momentum, weight_decay=1e-6)
-
     test_loader = meta_data[3]
     best_total_acc, losses = train_torch_model(classifier, train_loader, test_loader, optimizer, criterion, device)
-
     return Statistics.get_train_statistics(layers_losses, best_total_acc), losses
 \end{lstlisting}
 
