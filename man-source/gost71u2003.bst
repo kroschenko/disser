@@ -110,9 +110,9 @@ FUNCTION {output.nonnull}
         { output.state before.all =
             'write$
             { output.state after.dblslash =
-                { "~//" * change.language * " " * write$ }
+                { "~//~" * change.language * write$ }
                 { output.state after.slash =
-                    { "~/ " * write$ }
+                    { "~/~" * write$ }
                     { output.state after.column =
                        { ": " * write$ }
                        { output.state after.semicolumn =
@@ -379,12 +379,12 @@ FUNCTION {bbl.of}      %  { "\bblof{}" }
 
 FUNCTION {bbl.etal}      %  { "\bblof{}" }
 {  curlanguage "english" =
-    {"[et~al]"}
+    {"[et~al.]"}
     { curlanguage "ukrainian" =
         {"[{\cyr\cyrt\cyra~\cyrii\cyrn.}]"}
         { curlanguage "russian" =
            {"[{\cyr\cyri~\cyrd\cyrr.}]"}
-           {"language is not defined: " language  "[et al]" * * warning$ "[et al]"}
+           {"language is not defined: " language  "[et al.]" * * warning$ "[et al.]"}
          if$}
       if$}
   if$
@@ -500,7 +500,7 @@ INTEGERS { nameptr namesleft numnames }
 
 FUNCTION {format.names}
 {
-  #1 "{vv~}{ll}{~jj},{~ff}" format.name$
+  #1 "{vv~}{~ll}{~jj},{~ff}" format.name$
 }
 
 
@@ -511,12 +511,12 @@ FUNCTION {format.names.rev}
   numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr
-      "{ff~}{vv~}{ll}{, jj}"
+      "{ff}{~vv}{~ll}{, jj}"
       format.name$ 't :=
       nameptr #1 >
         {
           nameptr #4 =
-          numnames #4 > and
+          numnames #3 > and
             { "others" 't :=
               #1 'namesleft := }
             'skip$
@@ -796,7 +796,7 @@ FUNCTION {format.pages.page}
 { pages empty$
     { numpages empty$
       { "" }
-      { numpages bbl.pages tie.connect }
+      { numpages bbl.page tie.connect }
     if$}
     { format.pages}
   if$
