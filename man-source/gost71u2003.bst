@@ -110,9 +110,9 @@ FUNCTION {output.nonnull}
         { output.state before.all =
             'write$
             { output.state after.dblslash =
-                { "~//~" * change.language * write$ }
+                { " //~" * change.language * write$ }
                 { output.state after.slash =
-                    { "~/~" * write$ }
+                    { " /~" * write$ }
                     { output.state after.column =
                        { ": " * write$ }
                        { output.state after.semicolumn =
@@ -511,7 +511,7 @@ FUNCTION {format.names.rev}
   numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr
-      "{ff}{~vv}{~ll}{, jj}"
+      "~{ff}{~vv}{~ll}{, jj}"
       format.name$ 't :=
       nameptr #1 >
         {
