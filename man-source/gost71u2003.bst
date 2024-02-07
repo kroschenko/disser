@@ -975,7 +975,6 @@ FUNCTION {article}
 
 FUNCTION {book}
 { output.bibitem
-  "~"
   author.before
   format.btitle "title" output.check
   new.slash
