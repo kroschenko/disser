@@ -285,7 +285,7 @@ FUNCTION {bbl.edby}    %  { "\bbledby{}" }
     { curlanguage "ukrainian" =
         {"{\cyr\CYRP\cyrii\cyrd\ \cyrr\cyre\cyrd.\ }"}
         { curlanguage "russian" =
-           {"{\cyr\CYRP\cyro\cyrd\ \cyrr\cyre\cyrd.\ }"}
+           {"{\cyr\cyrp\cyro\cyrd\ \cyrr\cyre\cyrd.\ }"}
            {"language is not defined: " language  "edited by" * * warning$ "edited by"}
          if$}
       if$}
