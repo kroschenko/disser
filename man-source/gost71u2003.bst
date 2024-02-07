@@ -511,7 +511,7 @@ FUNCTION {format.names.rev}
   numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr
-      "~{ff}{~vv}{~ll}{, jj}"
+      "{ff}{~vv}{~ll}{, jj}"
       format.name$ 't :=
       nameptr #1 >
         {
@@ -975,6 +975,7 @@ FUNCTION {article}
 
 FUNCTION {book}
 { output.bibitem
+  "~"
   author.before
   format.btitle "title" output.check
   new.slash
