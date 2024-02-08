@@ -500,7 +500,7 @@ INTEGERS { nameptr namesleft numnames }
 
 FUNCTION {format.names}
 {
-  #1 "{vv~}{~ll}{~jj},{~ff}" format.name$
+  #1 "{vv~}{ll}{~jj},{~ff}" format.name$
 }
 
 
