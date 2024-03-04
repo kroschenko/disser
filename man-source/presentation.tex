@@ -1,23 +1,23 @@
 \documentclass[10pt]{beamer}
 
 % \usetheme{Berkeley}
-\usetheme{Madrid}
+\usetheme{Boadilla}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[russian,english]{babel}
+\usepackage[english,russian]{babel}
 % отключить клавиши навигации
 \setbeamertemplate{navigation symbols}{}
-\usepackage{listings}
-\definecolor{keyword}{RGB}{0, 0, 255}
-\definecolor{string}{RGB}{163,21,21}
-\definecolor{comment}{RGB}{0,128,0}
+% \usepackage{listings}
+% \definecolor{keyword}{RGB}{0, 0, 255}
+% \definecolor{string}{RGB}{163,21,21}
+% \definecolor{comment}{RGB}{0,128,0}
 % тема оформления
-\usepackage[]{algorithm2e}
+% \usepackage[]{algorithm2e}
 \usepackage{caption}
 
 \usepackage{hyperref}
-\usepackage{nccboxes}
-\usepackage{amsfonts}
+% \usepackage{nccboxes}
+% \usepackage{amsfonts}
 \usepackage{ragged2e}
 
 % цветовая схема
@@ -49,6 +49,8 @@
   {\centering Брест 2024\par}
 }
 
+\setlength{\leftmargini}{7pt}
+
 \institute[]{Брестский государственный технический университет}
 \title[]{\textbf{Методы обучения глубоких нейронных сетей для задач компьютерного зрения}}   
 \subtitle{диссертация на соискание\\ ученой степени кандидата технических наук по специальности\\ 05.13.17 -- <<Теоретические основы информатики>>}
@@ -56,16 +58,16 @@
 
 \date{}
 
-\lstset{ 
-	backgroundcolor=\color{white},  
-	basicstyle=\footnotesize,        
-	breaklines=true,                 
-	captionpos=b,                    
-	commentstyle=\color{comment}\ttfamily,   
-	keywordstyle=\color{keyword}\ttfamily,   
-	stringstyle=\color{string}\ttfamily,     
-	showstringspaces=false,
-}
+% \lstset{ 
+% 	backgroundcolor=\color{white},  
+% 	basicstyle=\footnotesize,        
+% 	breaklines=true,                 
+% 	captionpos=b,                    
+% 	commentstyle=\color{comment}\ttfamily,   
+% 	keywordstyle=\color{keyword}\ttfamily,   
+% 	stringstyle=\color{string}\ttfamily,     
+% 	showstringspaces=false,
+% }
 
 \addto\captionsenglish{
 	\renewcommand\tablename{Таблица}
@@ -74,13 +76,13 @@
 
 \setbeamertemplate{caption}[numbered]
 
-\SetKw{And}{and}
-\SetKw{Or}{or}
-\SetKwInput{KwData}{Вход}
-\SetKwInput{KwResult}{Результат}
-\SetAlgorithmName{Алгоритм}
+% \SetKw{And}{and}
+% \SetKw{Or}{or}
+% \SetKwInput{KwData}{Вход}
+% \SetKwInput{KwResult}{Результат}
+% \SetAlgorithmName{Алгоритм}
 
-\DontPrintSemicolon
+% \DontPrintSemicolon
 
 \begin{document}
 
@@ -955,7 +957,7 @@
         \end{frame}
 
         \begin{frame}{Опубликованность результатов диссертации (2)}
-            \small
+            \footnotesize
             \justifying
             \textbf{Статьи в научных рецензируемых изданиях, включенных в перечень изданий, и в иностранных научных изданиях}
             \begin{enumerate}
@@ -964,46 +966,96 @@
                 \item \justifying{Головко, В.А. Теория глубокого обучения : конвенциальный и новый подход / В.А. Головко, А.А. Крощенко, М.В. Хацкевич // Вестник Брестского государственного технического университета. Физика, математика, информатика. --- 2016. --- №~5 (101). --- С. 7--16.}
                 \item \justifying{Крощенко, А.А. Реализация нейросетевой системы распознавания маркировки продукции / А.А. Крощенко, В.А. Головко // Вестник Брестского государственного технического университета. Физика, математика, информатика. --- 2019. --- №~5 (118). --- С. 9--12.}
                 \item \justifying{Golovko, V.A. Deep Neural Networks : Selected Aspects of Learning and Application / V.A. Golovko, A.A. Kroshchanka, E.V. Mikhno // Pattern Recognition and Image Analysis. --- 2021. --- Vol. 31, №~1. --- P. 132--143.}
+                \item \justifying{Kroshchanka, A. Neural network component of the product marking recognition system on the production line / A. Kroshchanka, D. Ivaniuk // Open Semantic Technologies for Intelligent Systems : research papers collection / Belar. State Univ. of Informatics and Radioelectr.; ed. : V.V. Golenkov (ed.-in-chief) [et al.]. --- Minsk, 2021. --- Iss. 5. --- P. 219--224.}
             \end{enumerate}
         \end{frame}
 
         \begin{frame}{Опубликованность результатов диссертации (3)}
-            \small
+            \footnotesize
             \justifying
             \begin{enumerate}
-                \setcounter{enumi}{5}
-                \item \justifying{Kroshchanka, A. Neural network component of the product marking recognition system on the production line / A. Kroshchanka, D. Ivaniuk // Open Semantic Technologies for Intelligent Systems : research papers collection / Belar. State Univ. of Informatics and Radioelectr.; ed. : V.V. Golenkov (ed.-in-chief) [et al.]. --- Minsk, 2021. --- Iss. 5. --- P. 219--224.}
+                \setcounter{enumi}{6}
                 \item \justifying{Kroshchanka, A.A. Method for Reducing Neural-Network Models of Computer Vision / A.A. Kroshchanka, V.A. Golovko, M. Chodyka // Pattern Recognition and Image Analysis. --- Berlin, Heidelberg : Springer-Verlag, 2022. --- Vol. 32, №~2. --- P. 294--300.}
                 \item \justifying{Kroshchanka, A.A. Reduction of Neural Network Models in Intelligent Computer Systems of a New Generation / A. Kroshchanka // Open Semantic Technologies for Intelligent Systems (OSTIS-2023) : research papers collection / Belar. State Univ. of Informatics and Radioelectr.; ed. : V.V. Golenkov (ed.-in-chief) [et al.]. --- Minsk, 2023. --- Iss. 7. --- P. 127--132.}
             \end{enumerate}
             \textbf{Статьи в других научных изданиях}
             \begin{enumerate}
                 \item \justifying{Головко, В.А. Метод обучения нейронной сети глубокого доверия и применение для визуализации данных / В.А. Головко, А.А. Крощенко // Комп’ютерно-iнтегрованi технологiї: освiта, наука, виробництво. --- Луцьк, 2015. --- №~19. --- С. 6--12.}
+                \item \justifying{Интеграция искусственных нейронных сетей с базами знаний / В.А. Головко, В.В. Голенков, В.П. Ивашенко, В.В. Таберко, Д.С. Иванюк, А.А. Крощенко, М.В. Ковалёв // Онтология проектирования. --- 2018. --- Т. 8. --- №~3 (29). --- С. 366--386.}
+                \item \justifying{Principles of decision-making systems building based on the integration of neural networks and semantic models / V. Golovko, A. Kroshchanka, V. Ivashenko, M. Kovalev, V. Taberko, D. Ivaniuk // Open Semantic Technologies for Intelligent Systems (OSTIS-2019) : research papers collection / Belar. State Univ. of Informatics and Radioelectr.; ed. : V.V. Golenkov (ed.-in-chief) [et al.]. --- Minsk, 2019. --- Iss. 3. --- P. 91--102.}
             \end{enumerate}
         \end{frame}
 
         \begin{frame}{Опубликованность результатов диссертации (4)}
-            \small
+            \footnotesize
             \justifying
             \begin{enumerate}
-                \setcounter{enumi}{1}
-                \item \justifying{Интеграция искусственных нейронных сетей с базами знаний / В.А. Головко, В.В. Голенков, В.П. Ивашенко, В.В. Таберко, Д.С. Иванюк, А.А. Крощенко, М.В. Ковалёв // Онтология проектирования. --- 2018. --- Т. 8. --- №~3 (29). --- С. 366--386.}
-                \item \justifying{Principles of decision-making systems building based on the integration of neural networks and semantic models / V. Golovko, A. Kroshchanka, V. Ivashenko, M. Kovalev, V. Taberko, D. Ivaniuk // Open Semantic Technologies for Intelligent Systems (OSTIS-2019) : research papers collection / Belar. State Univ. of Informatics and Radioelectr.; ed. : V.V. Golenkov (ed.-in-chief) [et al.]. --- Minsk, 2019. --- Iss. 3. --- P. 91--102.}
+                \setcounter{enumi}{3}
                 \item \justifying{Implementation of an intelligent decision support system to accompany the manufacturing process / V. Golovko, A. Kroshchanka, M. Kovalev, V. Taberko, D. Ivaniuk // Open Semantic Technologies for Intelligent Systems (OSTIS-2020) : research papers collection / Belar. State Univ. of Informatics and Radioelectr.; ed. : V.V. Golenkov (ed.-in-chief) [et al.]. --- Minsk, 2020. --- Iss. 4. --- P. 175--182.}
                 \item \justifying{Deep Convolutional Neural Network for Detection of Solar Panels / V. Golovko, A. Kroshchanka, E. Mikhno, M. Komar, A. Sachenko // Data-Centric Business and Applications. ICT Systems-Theory, Radio-Electronics, Information Technologies and Cybersecurity. --- Cham: Springer International Publishing, 2021. --- P. 371--389.}
             \end{enumerate}
-        \end{frame}
-
-        \begin{frame}{Опубликованность результатов диссертации (5)}
-            \small
-            \justifying
             \textbf{Статьи в сборниках материалов научных конференций}
             \begin{enumerate}
                 \item \justifying{A Learning Technique for Deep Belief Neural Networks / V. Golovko, A. Kroshchanka, U. Rubanau, S. Jankowski // Neural Networks and Artificial Intelligence : proc. of the 8th Internat. Conf. ICNNAI 2014, Brest, Belarus, June 3-6, 2014 / V. Golovko, A. Imada (eds.). --- Springer, 2014. --- P. 136--146.}
                 \item \justifying{Головко, В.А. Применение нейронных сетей глубокого доверия для выделения семантически значимых признаков / В.А. Головко, А.А. Крощенко // Открытые семантические технологии проектирования интеллектуальных систем : материалы V Междунар. науч.-технич. конф. OSTIS-2015, Минск, 19-21 февраля 2015 г. / УО <<Бел. гос. ун-т информатики и радиоэлектроники>>, ГУ <<Администрация Парка высоких технологий>>; редкол.: В.В. Голенков (отв. ред.) [и др.]. --- Минск, 2015. --- P. 481--486.}
-                \footnotesize
-                \item \justifying{A New Technique for Restricted Boltzmann Machine Learning [Electronic resource] / V. Golovko, A. Kroshchanka, V. Turchenko, S. Jankowski, D. Treadwell // Proceedings of the 8th IEEE International Conference of Intelligent Data Acquisition and Advanced Computing Systems : Technology and Applications (IDAACS), Warsaw, Poland, Sept. 24-26, 2015 / Research Institute for Intelligent Computer Systems, Ternopil National Economic University and V.M. Glushkov Inst. of Cybernetics, National Academy for Sciences of Ukraine, Warsaw University of Technology. --- P. 182--186. --- Mode of access : https://ieeexplore.ieee.org/document/7340725. --- Date of access : 05.06.2023.}
-            \end{enumerate}    
+            \end{enumerate}  
+        \end{frame}
+
+        \begin{frame}{Опубликованность результатов диссертации (5)}
+            \footnotesize
+            \justifying
+            \begin{enumerate}
+                \setcounter{enumi}{2}
+                \item \justifying{A New Technique for Restricted Boltzmann Machine Learning [Electronic resource] / V. Golovko, A. Kroshchanka, V. Turchenko, S. Jankowski, D. Treadwell // Proceedings of the 8th IEEE International Conference of Intelligent Data Acquisition and Advanced Computing Systems : Technology and Applications (IDAACS), Warsaw, Poland, Sept. 24-26, 2015 / Research Institute for Intelligent Computer Systems, Ternopil National Economic University and V.M. Glushkov Inst. of Cybernetics, National Academy for Sciences of Ukraine, Warsaw University of Technology. --- P. 182--186. --- Mode of access : \url{https://ieeexplore.ieee.org/document/7340725}. --- Date of access : 05.06.2023.}
+                \item \justifying{Крощенко, А.А. Применение нейронных сетей глубокого доверия в \\ интеллектуальном анализе данных / А.А. Крощенко // Современные проблемы математики и вычислительной техники : сб. материалов IX Респ. науч. конф. молодых ученых и студентов, Брест, 19-21 ноября 2015 г. / Мин. обр. Респ. Бел., УО <<Брест. гос. технич. ун-т>>; редкол.: В.С. Рубанов (гл. ред.) [и др.]. --- Брест, 2015. --- С. 12--14.}
+                \item \justifying{Golovko, V. Theoretical Notes on Unsupervised Learning in Deep Neural Networks [Electronic resource] / V. Golovko, A. Kroshchanka // Proceedings of the 8th Internat. Joint Conf. on Computational Intelligence (IJCCI 2016), Porto, Portugal, Nov. 9-11 2016. --- P. 91--96. --- Mode of access : \url{https://scitepress.org/papers/2016/60843/60843.pdf}. --- Date of access : 05.06.2023.}
+            \end{enumerate}
+        \end{frame}
+
+        \begin{frame}{Опубликованность результатов диссертации (6)}
+            \footnotesize
+            \justifying
+            \begin{enumerate}
+                \setcounter{enumi}{5}
+                \item \justifying{Convolutional Neural Network Based Solar Photovoltaic Panel Detection in Satellite Photos [Electronic resource] / V. Golovko, S. Bezobrazov, A. Kroshchanka, A. Sachenko, M. Komar, A. Karachka // The 9th IEEE Internat. Conf. on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications, Bucharest, Romania, Sept. 21-23 2017. --- P. 14--19. --- Mode of access : \url{https://ieeexplore.ieee.org/document/8094501}. --- Date of access : 05.06.2023.}
+                \item \justifying{Integration of artificial neural networks and knowledge bases / V.A. Golovko, A.A. Kroshchanka, V.V. Golenkov, V.P. Ivashenko, M.V. Kovalev, V.V. Taberko, D.S. Ivaniuk // Открытые семантические технологии проектирования интеллектуальных систем : материалы VIII Междунар. науч.-технич. конф., Минск, 15-17 февраля 2018 г. / Мин. обр. Респ. Бел., УО <<Бел. гос. ун-т информатики и радиоэлектроники>>; редкол.: В.В. Голенков (гл. ред.) [и др.]. --- Минск, 2018. --- Вып. 2. --- C. 133--146.}
+                \item \justifying{Головко, В.А. Нейросетевые модели глубокого обучения для решения задач распознавания объектов на изображении / В.А. Головко, А.А. Крощенко // Вычислительные методы, модели и образовательные технологии : сб. материалов VII Междунар. науч.-практич. конф., Брест, 19 октября 2018 г. / Брест. гос. ун-т имени А.С. Пушкина; под общ. ред. А.А. Козинского. --- Брест, 2018. --- С. 3--5.}
+            \end{enumerate}            
+        \end{frame}
+
+        \begin{frame}{Опубликованность результатов диссертации (7)}
+            \footnotesize
+            \justifying
+            \begin{enumerate}
+                \setcounter{enumi}{8}
+                \item \justifying{Golovko, V. Development of Solar Panels Detector [Electronic resource] / V. Golovko, A. Kroshchanka, S. Bezobrazov, A. Sachenko, M. Komar, O. Novosad // 2018 International Scientific-Practical Conference <<Problems of Infocommunications. Science and Technology (PIC S\&T 2018)>>, Kharkiv, Ukraine, 9-12 October 2018 / Institute of Electrical and Electronics Engineers, Inc. --- Mode of access : \url{https://www.semanticscholar.org/paper/Development-of-Solar-Panels-Detector-Golovko-Kroshchanka/914c0b8c159c64100609fc8455636b1e3f8568cb}. --- Date of access : 05.06.2023.}
+                \item \justifying{Golovko, V. Brands and caps labeling recognition in images using deep learning [Electronic resource] / V. Golovko, A. Kroshchanka, E. Mikhno // Pattern Recognition and Information Processing : revised selected papers of the 14th Internat. Conf. PRIP 2019, Minsk, May 21-23 2019; Eds. : S.V. Ablameyko, V.V. Krasnoproshin, M.M. Lukashevich. --- P. 35--51. --- Mode of access : \url{https://www.researchgate.net/publication/337459978_Brands_and_Caps_Labeling_Recognition_in_Images_Using_Deep_Learning}. --- Date of access : 05.06.2023.}
+                \item \justifying{Головко, В.А. Обнаружение и распознавание маркировки продукции с помощью нейросетевых алгоритмов / В.А. Головко, А.А. Крощенко // Вычислительные методы, модели и образовательные технологии: сб. материалов VII Междунар. науч.-практич. конф., Брест, 18 октября 2019 г. / Брест. гос. ун-т имени А.С. Пушкина; под общ. ред. А.А. Козинского. --- Брест, 2019. --- С. 3--6.}
+            \end{enumerate}
+        \end{frame}
+
+        \begin{frame}{Опубликованность результатов диссертации (8)}
+            \footnotesize
+            \justifying
+            \begin{enumerate}
+                \setcounter{enumi}{11}
+                \item \justifying{Neuro-Symbolic Artificial Intelligence: Application for Control the Quality of Product Labeling [Electronic resource] / V. Golovko, A. Kroshchanka, M. Kovalev, V. Taberko, D. Ivaniuk // Open Semantic Technologies for Intelligent Systems : revised selected papers of the 10th Intern. Conf. (OSTIS 2020), Minsk, Febr. 19-22, 2020; / Eds. : V. Golenkov, V. Krasnoproshin, V. Golovko, E. Azarov. --- P. 81--101. --- Mode of access : \url{https://libeldoc.bsuir.by/bitstream/123456789/42395/1/Golovko_Neuro_Symbolic.pdf}. --- Date of access : 05.06.2023.}
+                \item \justifying{Kroshchanka, A. The Reduction of Fully Connected Neural Network Parameters Using the Pre-training Technique / A. Kroshchanka, V. Golovko // Proceedings of the 11th IEEE Intern. Conf. on Intelligent Data Acquisition and Advanced Computing Systems : Technology and Applications (IDAACS), Cracow, Poland, September 22-25, 2021 / Cracow University of Technology [et al.]. --- Vol. 2. --- P. 937--941. --- Mode of access : \url{https://www.researchgate.net/publication/357613109_The_Reduction_of_Fully_Connected_Neural_Network_Parameters_Using_the_Pre-training_Technique}. --- Date of access : 05.06.2023.}
+            \end{enumerate}
+            \textbf{Тезисы}
+            \begin{enumerate}
+                \item \justifying{Крощенко, А.А. Методы глубокого обучения нейронных сетей / А.А. Крощенко // Вычислительные методы, модели и образовательные технологии : сб. матер. региональной науч.-практич. конф., Брест, 22-23 окт. 2013 г. / Брест. гос. ун-т им. А.С. Пушкина; под общ. ред. О.В. Матысика. — Брест, 2013. — С. 21–22.}
+                \item Головко, В.А. Об одном методе обучения нейронных сетей глубокого доверия / В.А. Головко, А.А. Крощенко // Вычислительные методы, модели и образовательные технологии : сб. матер. Междунар. науч.-практич. конф., Брест, 15-16 окт. 2014 г. / Брест. гос. ун-т им. А.С. Пушкина; под общ. ред. О.В. Матысика. --- Брест, 2014. --- С. 98--99.
+            \end{enumerate}
+        \end{frame}
+
+        \begin{frame}{Опубликованность результатов диссертации (9)}
+            \footnotesize
+            \begin{enumerate}
+                \setcounter{enumi}{2}
+                \item \justifying{Головко, В.А. Применение нейронных сетей глубокого доверия в интеллектуальном анализе данных / В.А. Головко, А.А. Крощенко // Вычислительные методы, модели и образовательные технологии : сб. матер. Междунар. науч.-практич. конф., Брест, 22 окт. 2015 г. / Брест. гос. ун-т им. А.С. Пушкина; под общ. ред. О.В. Матысика. — Брест, 2015. — С. 97–98.}
+                \item Крощенко, А.А. Применение глубокой нейронной сети для решения задачи распознавания образов / А.А. Крощенко // Вычислительные методы, модели и образовательные технологии : сб. матер. Междунар. науч.-практич. конф., Брест, 21 окт. 2016 г. / Брест. гос. ун-т им. А.С. Пушкина; под общ. ред. О.В. Матысика. --- Брест, 2016. --- С. 132--133.
+            \end{enumerate}
         \end{frame}
 
         % \begin{frame}{Опубликованность результатов диссертации (3)}
